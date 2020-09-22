@@ -25,31 +25,248 @@
 
 p{
     font-family:A_little_sunshine;
-    font-size: 20px;
+    font-size: 1.5em;
 }
-
-.caja{
-    font-family: A_little_sunshine; 
-    font-size: 20px;
-    font-weight: 400; 
-    color: #000000; 
-    background:#ffffff;
-    margin: 1vw 15vw;
-    overflow: hidden;
-    padding: 1vw;
-    border-radius: 25px 25px 25px 25px;
-    border: 2px solid #97dab1;
-}
-
 
 #font1{
     font-family:sweet_purple;
     font-size: calc(1em + 1vw);
 }
 
+.caja{
+    font-family: A_little_sunshine;
+    font-size: 1.4em; 
+    color: #000000; 
+    background:#ffffff;
+    margin: 1vh 15vw;
+    overflow: hidden;
+    padding: 1vw;
+    border-radius: 25px 25px 25px 25px;
+    border: 2px solid #97dab1;
+}
+
+.caja2{
+    font-family: sweet_purple; 
+    margin-top: 10vh;
+    font-size: 2em;
+    font-weight: 500;
+    color: #000000;
+    background:#ffffff;
+    margin:  10vh 15vw;
+    overflow: hidden;
+    padding: 1rem 5rem;
+    border-radius: 25px 25px 25px 25px;
+    border: 2px solid #97dab1;
+}
+
+.caja3{
+    font-family: A_little_sunshine;
+    font-size: 1.4em; 
+    color: #000000; 
+    background:#ffffff;
+    margin: 10vh 15vw;
+    overflow: hidden;
+    padding: 1vw;
+    border-radius: 25px 25px 25px 25px;
+    border: 2px solid #97dab1;
+}
+
+/*carrusel*/
+
+.img {
+  width: 60vw;
+  height: 40vw;
+}
+
+.icon-cards {
+  margin-top: 10vh;
+  position: relative;
+  width: 60vw;
+  height: 40vw;
+  margin: 0;
+  color: white;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.icon-cards__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-30vw) rotateY(0);
+          transform: translateZ(-30vw) rotateY(0);
+  -webkit-animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+          animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.icon-cards__content.step-animation {
+  -webkit-animation: carousel 8s infinite steps(1) forwards;
+          animation: carousel 8s infinite steps(1) forwards;
+}
+.icon-cards__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60vw;
+  height: 40vw;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.icon-cards__item:nth-child(1) {
+  background: #c2f2c5;
+  -webkit-transform: rotateY(0) translateZ(35vw);
+          transform: rotateY(0) translateZ(35vw);
+}
+.icon-cards__item:nth-child(2) {
+  background: #c2f2c5;
+  -webkit-transform: rotateY(120deg) translateZ(35vw);
+          transform: rotateY(120deg) translateZ(35vw);
+}
+.icon-cards__item:nth-child(3) {
+  background: #c2f2c5;
+  -webkit-transform: rotateY(240deg) translateZ(35vw);
+          transform: rotateY(240deg) translateZ(35vw);
+}
+
+@-webkit-keyframes carousel {
+  0%,  17.5% {
+    -webkit-transform: translateZ(-35vw) rotateY(0);
+            transform: translateZ(-35vw) rotateY(0);
+  }
+  27.5%, 45% {
+    -webkit-transform: translateZ(-35vw) rotateY(-120deg);
+            transform: translateZ(-35vw) rotateY(-120deg);
+  }
+  55%, 72.5% {
+    -webkit-transform: translateZ(-35vw) rotateY(-240deg);
+            transform: translateZ(-35vw) rotateY(-240deg);
+  }
+  82.5%, 100% {
+    -webkit-transform: translateZ(-35vw) rotateY(-360deg);
+            transform: translateZ(-35vw) rotateY(-360deg);
+  }
+}
+
+@keyframes carousel {
+  0%,  17.5% {
+    -webkit-transform: translateZ(-35vw) rotateY(0);
+            transform: translateZ(-35vw) rotateY(0);
+  }
+  27.5%, 45% {
+    -webkit-transform: translateZ(-35vw) rotateY(-120deg);
+            transform: translateZ(-35vw) rotateY(-120deg);
+  }
+  55%, 72.5% {
+    -webkit-transform: translateZ(-35vw) rotateY(-240deg);
+            transform: translateZ(-35vw) rotateY(-240deg);
+  }
+  82.5%, 100% {
+    -webkit-transform: translateZ(-35vw) rotateY(-360deg);
+            transform: translateZ(-35vw) rotateY(-360deg);
+  }
+}
+
+body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  background: #110F15;
+}
+
+
+
+@-webkit-keyframes jelly {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  30% {
+    -webkit-transform: scale(1.25, 0.75);
+            transform: scale(1.25, 0.75);
+  }
+  40% {
+    -webkit-transform: scale(0.75, 1.25);
+            transform: scale(0.75, 1.25);
+  }
+  50% {
+    -webkit-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85);
+  }
+  65% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+  }
+  75% {
+    -webkit-transform: scale(1.05, 0.95);
+            transform: scale(1.05, 0.95);
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes jelly {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  30% {
+    -webkit-transform: scale(1.25, 0.75);
+            transform: scale(1.25, 0.75);
+  }
+  40% {
+    -webkit-transform: scale(0.75, 1.25);
+            transform: scale(0.75, 1.25);
+  }
+  50% {
+    -webkit-transform: scale(1.15, 0.85);
+            transform: scale(1.15, 0.85);
+  }
+  65% {
+    -webkit-transform: scale(0.95, 1.05);
+            transform: scale(0.95, 1.05);
+  }
+  75% {
+    -webkit-transform: scale(1.05, 0.95);
+            transform: scale(1.05, 0.95);
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+  
+
+/*end carrusel*/
+
+
+
+/*
+
+.img {
+  width: 50vw;
+  height: 30vw;
+}
+
+
 .galeria {
   height: calc( var(--h) + 3em);
-  width: var(--w);
+  width: var(-w);
   margin:20vw;
   position: relative;
   display:inline-block;
@@ -82,4 +299,4 @@ p{
 
 .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
   opacity: 1;
-}
+}*/

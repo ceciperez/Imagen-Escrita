@@ -3,7 +3,7 @@
 	<head>
 		<!-- Titulo de la pagina -->
 	    <title>La cueva de ceci</title>
-	    <!-- importe de el arcivo js -->
+	    <!-- importe de el archivo js -->
 	    <script src="sketch.js"></script>
 	    <!-- importe de la hoja de estilos css -->
 	    <link rel="stylesheet" type="text/css" href="style.css">
@@ -29,31 +29,37 @@
 	<body id="body">
 		<!-- agregando un bloque para el header -->
 		<table></table>
-    	<!-- Titulo -->
+
+		<!-- Titulo -->
+		
     	<p id="title" align="center">{Bienvenide!}</p>
     	<p id="sub_title" align="center">Sientete a gusto en mi madriguera</p>
-    	<p  align="center">(limpiate las patas antes de entrar.)</p>
-    	<!-- cuadro de texto -->
-    	<div class="caja" align="center">Hola hola, esta página es para hablar un poco de mi y de mis gustos, porque claramente es muy interesante (sarcasmo detected), así de paso me conocen un poco sin la necesidad de interactuar socialmente conmigo, ah, y también para presentar algo para Imagen escrita. Weno, espero que mi página les resulte estéticamente agradable y nos leemos por ahí, adiuh|.</div>
-    	
+		<p  align="center">(límpiate las patas antes de entrar.)</p>
+		
+		<!-- cuadro de texto -->
+		
+		<div class="caja" align="center">Hola hola, esta página es para hablar un poco de mi y de mis gustos, porque claramente es muy interesante (sarcasmo detected), así de paso me conocen un poco sin la necesidad de interactuar socialmente conmigo, ah, y también para el ramo de Imagen escrita, que llevo mucho sin presentar nada . Weno, espero que mi página les resulte estéticamente agradable y nos leemos por ahí, adiuh|.</div>
+
+    	<!-- otro cuadro con texto-->
+
+		<div class="caja2" align="center"> {DIBUJITOS} </div>
 
     	<!-- Slide de fotos -->
 
-		<div class="galeria">
-			<input type="radio" name="navegacion" id="_1" checked>
-			<input type="radio" name="navegacion" id="_2">
-			<input type="radio" name="navegacion" id="_3">
-			<input type="radio" name="navegacion" id="_4"> 
-			<img src="mau.png" width="800" height="600" alt="Galeria CSS 1" />
-			<img src="mona.png" width="600" height="800" alt="Galeria CSS 2"  />
-			<img src="brujita.png"width="800" height="600" alt="Galeria CSS 3" />
-			<img src="ceci_awakening.png" width="800" height="600" alt="Galeria CSS 4" />
-		</div>
+		<figure class="icon-cards mt-3">
+			<div class="icon-cards__content">
+				<div class="icon-cards__item d-flex align-items-center justify-content-center"><img src="mau.png" class="img"></div>
+				<div class="icon-cards__item d-flex align-items-center justify-content-center"><img src="brujita.png" class="img"></div>
+				<div class="icon-cards__item d-flex align-items-center justify-content-center"><img src="ceci_awakening.png" class="img"></div>
+			</div>
+		</figure>
 
-    	<!-- area chica gamer -->
+    	<!-- area jueguitos -->
+    	<!-- espacio -->
+    	<div class="caja3" align="center">|Area jueguitos|</div>
     	<!-- juegos que gustan -->
 	</body>
 	<footer>
-		<!-- algo, nu she -->
+		<!-- algo -->
 	</footer>
 </html>
