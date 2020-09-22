@@ -1,35 +1,44 @@
 #body{
     background-color: #c2f2c5;
     margin-top: 80px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
 }
 
 @font-face{
-    font-family:sweet_purple;
+    font-family: sweet_purple;
     src: url(sweet_purple.ttf);
 }
 
 @font-face{
-    font-family:A_little_sunshine;
+    font-family: A_little_sunshine;
     src: url(A_little_sunshine.ttf);
 }
 
 #title{
-    font-family:sweet_purple;
+    font-family: sweet_purple;
     font-size: calc(5vh + 5vw);
 }
 
 #sub_title{
-    font-family:sweet_purple;
+    font-family: sweet_purple;
     font-size: calc(3vh + 2vw);
 }
 
 p{
-    font-family:A_little_sunshine;
+    font-family: A_little_sunshine;
     font-size: 1.5em;
 }
 
 #font1{
-    font-family:sweet_purple;
+    font-family: sweet_purple;
     font-size: calc(1em + 1vw);
 }
 
@@ -173,21 +182,6 @@ p{
             transform: translateZ(-35vw) rotateY(-360deg);
   }
 }
-
-body {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  background: #110F15;
-}
-
-
 
 @-webkit-keyframes jelly {
   from {
